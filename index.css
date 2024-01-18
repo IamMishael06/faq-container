@@ -2,5 +2,29 @@
 
 .faq-container{
     width: 90%;
-    height: auto;
+    height: 700px;
+    padding: 5px;
+    margin: 0 auto;
+    background: #FBFBFB;
+    box-shadow: 0px 0px 0.5852273106575012px 0.5852273106575012px rgba(0, 0, 0, 0.15);
+}
+.question-box{
+    max-height: auto;
+    overflow: hidden;
+}
+.question-area{
+    display: flex;
+    gap: 2.5%;
+}
+.question-area p{
+    width: 80%;
+    color: #1E1E1E;
+    font-size: 9.36px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-transform: capitalize;
+    word-wrap: break-word
+}
+.faq-btn{
+    
 }
