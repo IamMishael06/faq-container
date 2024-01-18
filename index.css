@@ -1,19 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@500&display=swap");
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
 
 .faq-container{
     width: 90%;
-    height: 700px;
-    padding: 5px;
+    height: auto;
     margin: 0 auto;
     background: #FBFBFB;
     box-shadow: 0px 0px 0.5852273106575012px 0.5852273106575012px rgba(0, 0, 0, 0.15);
 }
 .question-box{
-    max-height: auto;
+    max-height:30px;
+    transition:max-height 0.3s;
     overflow: hidden;
+    padding-bottom: 5px;
+    width: 100%;
+    box-shadow: 0px 0px 0.5852273106575012px 0.5852273106575012px rgba(0, 0, 0, 0.15);
 }
 .question-area{
     display: flex;
+    align-items: center;
     gap: 2.5%;
 }
 .question-area p{
@@ -26,5 +36,38 @@
     word-wrap: break-word
 }
 .faq-btn{
-    
+    width: 15px;
+    position: relative;
+    height: 20px;
+    padding-left: 2.44px; padding-right: 2.19px;
+     background: #1E1E1E;
+      border-radius: 26.34px; 
+      justify-content: center; 
+      align-items: center; 
+    display: flex;
+}
+.faq-btn .bar{
+    position: absolute;
+    width: 7.5px;
+    height: 2px;
+    background: #FBFBFB;
+}
+
+.faq-answer-sec{
+    width: 80%;
+    margin: 0 auto;
+}
+.faq-answer-sec p{
+    color: rgba(30, 30, 30, 0.60);
+font-size: 10px;
+font-family: Poppins;
+font-weight: 600;
+word-wrap: break-word
+}
+/* JAVASCRIPT CSS FUNC */
+.question-box.active{
+    max-height: auto;
+}
+.faq-btn .bar:nth-child(2).active{
+    transform: rotate(90deg);
 }
