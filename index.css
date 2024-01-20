@@ -14,8 +14,8 @@ body{
     box-shadow: 0px 0px 0.5852273106575012px 0.5852273106575012px rgba(0, 0, 0, 0.15);
 }
 .question-box{
-    max-height:30px;
-    transition:max-height 0.3s;
+height:30px;
+    transition:height 0.3s;
     overflow: hidden;
     padding-bottom: 5px;
     width: 100%;
@@ -66,7 +66,7 @@ word-wrap: break-word
 }
 /* JAVASCRIPT CSS FUNC */
 .question-box.active{
-    max-height: auto;
+height: 100px;
 }
 .faq-btn .bar:nth-child(2).active{
     transform: rotate(90deg);
