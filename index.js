@@ -27,6 +27,7 @@ const questionBox = document.querySelectorAll('.question-box')
                 questionBox.forEach( otherbox =>{
                     if (otherbox !== box && otherbox.classList.contains('active')) {
                         otherbox.classList.remove('active');
+                        const plus = otherbox.querySelectorAll('.faq-btn > .bar:nth-child(2)');
                         plus.forEach( cross => {
                             cross.classList.remove('active')
     
