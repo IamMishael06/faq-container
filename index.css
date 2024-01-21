@@ -14,10 +14,10 @@ body{
     box-shadow: 0px 0px 0.5852273106575012px 0.5852273106575012px rgba(0, 0, 0, 0.15);
 }
 .question-box{
-height:30px;
+height:20px;
     transition:height 0.3s;
     overflow: hidden;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     width: 100%;
     box-shadow: 0px 0px 0.5852273106575012px 0.5852273106575012px rgba(0, 0, 0, 0.15);
 }
@@ -52,7 +52,10 @@ height:30px;
     height: 2px;
     background: #FBFBFB;
 }
-
+.faq-btn .bar:nth-child(2){
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
 .faq-answer-sec{
     width: 80%;
     margin: 0 auto;
@@ -66,8 +69,8 @@ word-wrap: break-word
 }
 /* JAVASCRIPT CSS FUNC */
 .question-box.active{
-height: 100px;
+height: 110px;
 }
 .faq-btn .bar:nth-child(2).active{
-    transform: rotate(90deg);
+    transform: rotate(0deg);
 }
