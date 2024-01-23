@@ -37,3 +37,35 @@ const questionBox = document.querySelectorAll('.question-box')
                 })
             })
         });
+
+// DESKTOP JAVASCRIPT
+const desktopQuestion = document.querySelectorAll('.question-desktop');
+const answers = document.querySelectorAll('.answer-desktop');
+
+desktopQuestion.forEach((question, index) => {
+    const plusList = question.querySelectorAll('.faq-btn-desktop > .bar:nth-child(2)');
+
+    question.addEventListener("click", () => {
+        plusList.forEach(plus => {
+            plus.classList.toggle('active');
+        });
+
+        answers.forEach((answer, i) => {
+            if (i === index) {
+                answer.classList.add('active');
+            } else {
+                answer.classList.remove('active');
+            }
+        });
+
+        // Remove 'active' class from other questions
+        desktopQuestion.forEach((otherbox, i) => {
+            if (i !== index) {
+                const otherPlusList = otherbox.querySelectorAll('.faq-btn-desktop > .bar:nth-child(2)');
+                otherPlusList.forEach(plus => {
+                    plus.classList.remove('active');
+                });
+            }
+        });
+    });
+});
